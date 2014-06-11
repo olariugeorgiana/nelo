@@ -1,0 +1,1 @@
+<a class="button addButton"  href="${pageContext.request.contextPath}/admin/reservation">New reservation</a>

@@ -1,0 +1,143 @@
+.floatLeftLabels, .floatLeftLabels div >label {
+    float: left;
+}
+
+.formPanel {
+    background: #f6f7f9;
+    color: #1d2d44;
+    text-shadow: 1px 1px 1px #FFF;
+    border: 1px solid #cbbeb9;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.formPanel fieldset {
+    border: none;
+    padding: 0px;
+}
+
+.formPanel fieldset .legend {
+    font-size: 1.5em;
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid #cbbeb9;
+    border-bottom: 1px solid #cbbeb9;
+    color: #888;
+}
+
+.formPanel fieldset .legend:first-child {
+    border-top: none;
+}
+
+.formPanel fieldset .legend >span {
+    display: block;
+    font-size: 11px;
+}
+
+.formPanel fieldset .fields {
+    padding: 10px;
+}
+
+.formPanel fieldset .fields label {
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.formPanel fieldset .fields.withFloat label {
+}
+
+.formPanel fieldset .fields input[type="text"], .formPanel fieldset .fields textarea, .formPanel fieldset .fields select {
+    border: 1px solid #cbbeb9;
+    color: #888;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 6px 12px;
+    width: 200px;
+    border-radius: 4px;
+    font: normal 14px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    box-shadow: 0 1px 0px #f1efee;
+}
+
+.formPanel fieldset .fields input[type="text"]:hover, .formPanel fieldset .fields textarea:hover, .formPanel fieldset .fields select:hover {
+    border: 1px solid #cbbeb9;
+}
+
+#pageActions .button {
+    border-right: 1px solid #cbbeb9;
+    padding: 7px;
+    font-size: 14px;
+    color: #a79b97;
+    font-weight: bold;
+}
+
+#pageFilters a {
+    text-decoration: underline;
+}
+
+#pageFilters a:hover {
+    cursor: pointer;
+}
+
+#pageActions .button:hover {
+    color: #1d2d44;
+    cursor: pointer;
+}
+
+.addButton {
+    background: url("../../images/add.png") no-repeat;
+    background-size: 15px;
+    background-position: 6px 7px;
+    padding-left: 30px !important;
+}
+
+.saveButton {
+    background: url("../../images/save.png") no-repeat;
+    background-size: 15px;
+    background-position: 6px 7px;
+    padding-left: 30px !important;
+}
+
+.cancelButton {
+    background: url("../../images/cancel.png") no-repeat;
+    background-size: 15px;
+    background-position: 6px 7px;
+    padding-left: 30px !important;
+}
+
+/*css pentru pagina de adaugare a camerei, pt poze*/
+#pictureField ul {
+    list-style: none;
+    padding: 0px;
+    display: inline-table;
+    margin: 10px;
+    border: solid 1px #cbbeb9;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+}
+
+#pictureField ul li {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*css pentru pagina de rezervare*/
+.searchRoomsButton {
+    border: solid 1px #cbbeb9;
+    border-radius: 5px;
+    width: 260px;
+    padding: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.searchRoomsButton:hover {
+    background-color: #cbbeb9;
+}
+

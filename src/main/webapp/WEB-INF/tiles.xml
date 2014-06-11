@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="baseTemplateEmpty" template="/WEB-INF/views/emptyLayout/layout.jsp">
+        <put-attribute name="content" value=""/>
+    </definition>
+
+    <definition name="baseTemplateWeb" template="/WEB-INF/views/baseLayoutWeb/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/baseLayoutWeb/header.jsp"/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/views/baseLayoutWeb/footer.jsp"/>
+    </definition>
+
+    <definition name="baseTemplateAdmin" template="/WEB-INF/views/baseLayoutAdmin/layout.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/baseLayoutAdmin/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/baseLayoutAdmin/menu.jsp"/>
+        <put-attribute name="actions" value=""/>
+        <put-attribute name="filters" value=""/>
+        <put-attribute name="content" value=""/>
+        <put-attribute name="footer" value="/WEB-INF/views/baseLayoutAdmin/footer.jsp"/>
+    </definition>
+
+    <definition name="accessDenied" extends="baseTemplateEmpty">
+        <put-attribute name="content" value="/WEB-INF/views/accessDenied.jsp"/>
+    </definition>
+
+    <definition name="pageNotExist" extends="baseTemplateEmpty">
+        <put-attribute name="content" value="/WEB-INF/views/pageNotExist.jsp"/>
+    </definition>
+
+    <!--web definitions-->
+    <definition name="homeWeb" extends="baseTemplateWeb">
+        <put-attribute name="content" value="/WEB-INF/views/web/homePage.jsp"/>
+    </definition>
+    <definition name="authentificationWeb" extends="baseTemplateWeb">
+        <put-attribute name="content" value="/WEB-INF/views/web/authenticationPage.jsp"/>
+    </definition>
+    <definition name="personalInfo" extends="baseTemplateWeb">
+        <put-attribute name="content" value="/WEB-INF/views/web/personalInfo.jsp"/>
+    </definition>
+    <definition name="infoPage" extends="baseTemplateWeb">
+        <put-attribute name="content" value="/WEB-INF/views/web/infoPage.jsp"/>
+    </definition>
+    <definition name="roomWeb" extends="baseTemplateWeb">
+        <put-attribute name="content" value="/WEB-INF/views/web/roomPage.jsp"/>
+    </definition>
+    <definition name="facilitiesWeb" extends="baseTemplateWeb">
+        <put-attribute name="content" value="/WEB-INF/views/web/facilitiesPage.jsp"/>
+    </definition>
+    <definition name="booking" extends="baseTemplateWeb">
+        <put-attribute name="content" value="/WEB-INF/views/web/booking.jsp"/>
+    </definition>
+
+    <!--admin definitions-->
+    <definition name="homeAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="content" value="/WEB-INF/views/admin/homePage.jsp"/>
+    </definition>
+
+    <!--Customer-->
+    <definition name="customerListAdmin" extends="baseTemplateAdmin">
+        <!--<put-attribute name="actions" value="/WEB-INF/views/admin/customers/legends/customerListActions.jsp"/>-->
+        <put-attribute name="content" value="/WEB-INF/views/admin/customers/customersList.jsp"/>
+    </definition>
+    <definition name="registerCustomerAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/customers/legends/customerFormActions.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/customers/customerForm.jsp"/>
+    </definition>
+    <!--End Customer-->
+
+    <!--Food price-->
+    <definition name="foodPriceAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/foodPrice/legends/foodPriceActions.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/foodPrice/foodPriceForm.jsp"/>
+    </definition>
+    <!--End Food price-->
+
+    <!--Rooms-->
+    <definition name="roomsListAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/rooms/legends/roomListActions.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/rooms/roomsList.jsp"/>
+    </definition>
+    <definition name="registerRoomAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/rooms/legends/roomFormActions.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/rooms/roomForm.jsp"/>
+    </definition>
+    <!--End Rooms-->
+
+
+    <!--Overbooking-->
+    <definition name="overbookingAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="content" value="/WEB-INF/views/admin/overbooking/overbooking.jsp"/>
+    </definition>
+
+    <!--Reservations-->
+    <definition name="reservationListAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/reservations/legends/reservationListActions.jsp"/>
+        <put-attribute name="filters" value="/WEB-INF/views/admin/reservations/reservationListFilters.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/reservations/reservationList.jsp"/>
+    </definition>
+
+    <definition name="registerReservationAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/reservations/legends/reservationFormActions.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/reservations/reservationForm.jsp"/>
+    </definition>
+    <!--End Reservations-->
+
+    <!--Registrations-->
+    <definition name="registrationListAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/registrations/legends/registrationListActions.jsp"/>
+        <put-attribute name="filters" value="/WEB-INF/views/admin/registrations/registrationListFilters.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/registrations/registrationList.jsp"/>
+    </definition>
+
+    <definition name="registrationAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/registrations/legends/registrationFormActions.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/registrations/registrationForm.jsp"/>
+    </definition>
+    <!--End Registrations-->
+
+    <!--Users-->
+    <definition name="userListAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/users/legends/usersListActions.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/users/usersList.jsp"/>
+    </definition>
+
+    <definition name="userRegistrationAdmin" extends="baseTemplateAdmin">
+        <put-attribute name="actions" value="/WEB-INF/views/admin/users/legends/usersFormActions.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/users/userForm.jsp"/>
+    </definition>
+    <!--End Users-->
+
+</tiles-definitions>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <context:annotation-config/>
+    <mvc:annotation-driven/>
+    <mvc:default-servlet-handler/>
+
+    <context:component-scan base-package="org.nelo"/>
+
+    <context:property-placeholder location="classpath:application.properties"/>
+
+    <import resource="spring-database-config.xml"/>
+    <import resource="spring-view-config.xml"/>
+    <import resource="spring-i18n-config.xml"/>
+    <import resource="spring-security-config.xml"/>
+
+    <bean id="jacksonMessageConverter"
+          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.gmail.com"/>
+        <property name="port" value="587"/>
+        <property name="username" value="blacksea.nelo"/>
+        <property name="password" value="parola12345"/>
+
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <task:scheduler id="taskScheduler"/>
+    <task:executor id="executor" pool-size="1" queue-capacity="100"/>
+    <task:annotation-driven executor="executor" scheduler="taskScheduler"/>
+
+</beans>

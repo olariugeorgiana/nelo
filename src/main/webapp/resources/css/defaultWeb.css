@@ -1,0 +1,502 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6f7f9;
+    font-family: 'Helvetica neue';
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+#wrapper #header {
+    clear: both;
+    height: 108px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+
+#content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content_center {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#wrapper #content {
+}
+
+.footer_d {
+    position: absolute;
+    bottom: 0;
+}
+
+#footer {
+
+    text-align: center;
+    width: 100%;
+    height: 60px;
+
+}
+
+.menu_background {
+    width: 910px;
+    height: 68px;
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-image: url(../images/menu_back.jpg);
+    line-height: 60px;
+    float: left;
+}
+
+.menu_background_left {
+    width: 45px;
+    height: 68px;
+    background-image: url(../images/menu_back_left.jpg);
+    line-height: 60px;
+    float: left;
+}
+
+.menu_background_right {
+    float: left;
+    height: 68px;
+    width: 45px;
+    background-image: url(../images/menu_back_right.jpg);
+    line-height: 60px;
+}
+
+.menu_button_left {
+    width: auto;
+    height: 43px;
+    float: left;
+    line-height: 43px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 13px;
+}
+
+.menu_button_right {
+    width: auto;
+    height: 43px;
+    float: right;
+    line-height: 43px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 13px;
+}
+
+.menu_button_left a, .menu_button_right a {
+    color: #4c4c4c;
+    text-decoration: none;
+    height: 43px;
+}
+
+.menu_button_right:hover, .menu_button_left:hover {
+    background: url(../images/menu-hover.png);
+    background-size: 100% 43px;
+    background-repeat: no-repeat;
+}
+
+.menu_button_right a:hover, .menu_button_left a:hover {
+    color: #fff;
+}
+
+.booking_button {
+    margin: 68px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 144px;
+    height: 37px;
+    font-size: 15px;
+    background: url(../images/book-btn.png);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.booking_button :hover {
+    background-color: darkred;
+
+}
+
+.slider {
+    position: absolute;
+}
+
+.camere_acasa {
+    background-image: url(../images/gallery-back.jpg);
+    height: 335px;
+}
+
+.facilitati_acasa {
+    height: 250px;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.camera_single_acasa {
+    width: 300px;
+    height: 250px;
+    padding-left: 25px;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+    color: #666;
+}
+
+.camera_dubla_acasa {
+    width: 300px;
+    height: 250px;
+    padding-left: 25px;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+    color: #666;
+}
+
+.camera_tripla_acasa {
+    width: 300px;
+    height: 250px;
+    padding-left: 25px;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+    color: #666;
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-image: url(../images/mini_footer.jpg);
+    line-height: 60px;
+}
+
+.despre_hotel {
+    height: 335px;
+    width: 1000px;
+}
+
+.in_aer_liber {
+    height: auto;
+    width: 325px;
+    float: left;
+    padding-top: 10px;
+    color: #666;
+}
+
+.facilitati_camera {
+    height: auto;
+    width: 325px;
+    float: left;
+    padding-top: 10px;
+    color: #666;
+    border-left: 1px solid #7fa9ae;
+    border-right: 1px solid #7fa9ae;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.servicii {
+    height: auto;
+    width: 325px;
+    float: right;
+    padding-top: 10px;
+    color: #666;
+}
+
+h2:before {
+    content: url(../images/before.png);
+}
+
+h2:after {
+    content: url(../images/after.png);
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.facilitati_acasa img {
+    vertical-align: middle;
+    text-align: left;
+    float: left;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+/*room page*/
+.roomtitle {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #666;
+    background-image: url(../images/roomtitle.png);
+}
+
+.roompage {
+    height: 300px;
+    width: 1000px;
+}
+
+.roomimg_single {
+    height: 236px;
+    width: 350px;
+    float: left;
+    margin-top: 10px;
+}
+
+.roomcontinut {
+    float: left;
+    padding-left: 20px;
+    text-align: left;
+    width: 630px;
+    padding-top: 10px;
+    color: #666;
+}
+
+.facilitate_camera {
+    height: 20px;
+    width: 200px;
+    float: left;
+    padding-top: 5px;
+    line-height: 20px;
+    color: #666;
+    font-size: 18px;
+}
+
+/*autentificare*/
+.img_1000 {
+    height: 158px;
+    width: 1000px;
+    background-image: url(../images/beach.png);
+}
+
+.register {
+    vertical-align: top;
+    width: 450px;
+    height: 500px;
+    display: inline-block;
+    color: #3b8281;
+    padding-right: 44px;
+}
+
+.login {
+    vertical-align: top;
+    width: 450px;
+    height: 500px;
+    display: inline-block;
+    color: #3b8281;
+    margin-left: 44px;
+}
+
+.register input[type=text] {
+    padding-left: 5px;
+    border: solid 1px #d6d1c8;
+    width: 455px;
+    height: 50px;
+    outline: 0;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.register  [type=submit] {
+    margin: 0 auto;
+    width: 250px;
+    height: 40px;
+    background-image: url(../images/drive-btn.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.register [type=submit]:hover {
+    background: url(../images/drive-btn-hover.jpg) repeat center;
+    transition: all 0.3s ease 0s;
+}
+
+.register [type=submit]:focus {
+    display: none;
+}
+
+.login [type=text], .login [type=password] {
+    padding-left: 5px;
+    border: solid 1px #d6d1c8;
+    width: 455px;
+    height: 50px;
+    outline: 0;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.login  [type=submit] {
+    margin: 0 auto;
+    width: 250px;
+    height: 40px;
+    background-image: url(../images/drive-btn.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.login [type=submit]:hover {
+    background: url(../images/drive-btn-hover.jpg) repeat center;
+    transition: all 0.3s ease 0s;
+}
+
+.login [type=submit]:focus {
+    display: none;
+}
+
+input:focus {
+    border-color: #3b8281;
+    -webkit-box-shadow: #3b8281 0px 0px 2px;
+}
+
+/*rezervation*/
+.map {
+}
+
+/*facilitati*/
+.img_rooms {
+    height: 158px;
+    width: 1000px;
+    background-image: url(../images/rooms.png);
+}
+
+.rooms_fa {
+    color: #666;
+    font-size: 20px;
+    text-align: left;
+    width: 1000px;
+    margin: 0 auto;
+    height: 150px;
+}
+
+.facilitiesdDescription {
+    float: left;
+    padding-left: 20px;
+    text-align: left;
+    width: 100%;
+    padding-top: 10px;
+    color: #666;
+    font-size: 17px;
+}
+
+.pool {
+    height: 236;
+    width: 350px;
+    float: left;
+    background-image: url(../images/pool.jpg);
+    margin-top: 45px;
+}
+
+/*css pentru pagina de account a unui user*/
+.reservationTitle {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #666;
+    font-size: 24px;
+    background-image: url(../images/roomtitle.png);
+}
+
+.reservationPage {
+    width: 530px;
+    margin: auto;
+}
+
+.reservationRecord {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url(../images/inner-divider.png);
+    background-repeat: no-repeat;
+    color: #3b8281;
+    text-align: left;
+    font-size: 20px;
+}
+
+.bookNowMenu {
+    position: fixed;
+    z-index: 1000;
+    height: 30px;
+    top: 38px;
+    width: 94px;
+    font-size: 20px;
+    padding: 15px;
+    background-image: url(../images/mini_footer.jpg);
+}
+
+/*css pentru formularul de rezervare*/
+.bookingTitle {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #666;
+    font-size: 24px;
+    background-image: url(../images/roomtitle.png);
+}
+
+.bookingContent {
+    width: 100%;
+    text-align: center;
+}
+
+.bookingContent .label {
+    width: 150px;
+}
+
+.bookingContent .field {
+    padding-left: 5px;
+    border: solid 1px #d6d1c8;
+    width: 150px;
+    height: 25px;
+    outline: 0;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.bookingContent .submit {
+    margin: 0 auto;
+    width: 250px;
+    height: 40px;
+    background-image: url(../images/drive-btn.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.bookingContent .submit:hover {
+    background: url(../images/drive-btn-hover.jpg) repeat center;
+    transition: all 0.3s ease 0s;
+}
+

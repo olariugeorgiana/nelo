@@ -1,0 +1,67 @@
+.presentationGrid {
+    width: 100%;
+    border-spacing: 0;
+    padding: 10px;
+    background: #f6f7f9;
+    color: #1d2d44;
+    text-shadow: 1px 1px 1px #FFF;
+    border: 1px solid #cbbeb9;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.presentationGrid tr td {
+    border-bottom: solid 1px #ccc;
+    empty-cells: show;
+    overflow: hidden;
+    text-align: left;
+    padding: 3px;
+}
+
+.presentationGrid thead tr {
+}
+
+.presentationGrid thead tr td {
+    color: #555;
+}
+
+.presentationGrid tbody tr {
+}
+
+.presentationGrid tbody tr td {
+    color: #1d2d44;
+}
+
+.presentationGrid tbody tr.selected, .presentationGrid tbody tr:hover {
+    background-color: #f5f5f5 !important
+}
+
+.presentationGrid tbody tr.noSelection:hover {
+    background-color: white !important;
+}
+
+.presentationGrid tbody tr td .checkbox {
+    background: url("../images/checkboxCustom.png") no-repeat;
+    background-position: 0px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.presentationGrid tbody tr.selected td .checkbox {
+    background: url("../images/checkboxCustom.png") no-repeat;
+    background-position: 0px -16px;
+    width: 16px;
+    height: 16px;
+}
+
+.presentationGrid tbody tr td a {
+    text-decoration: underline;
+    font-size: 0.8em;
+    color: black;
+    padding-right: 10px;
+}
+
+.presentationGrid a:hover {
+    cursor: pointer;
+}
+
